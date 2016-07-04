@@ -18,6 +18,7 @@ public:
 	QualCluster qualClus;
 
 	Cluster * clus[4];
+	bool just;
 
 	FastX() {
 		clus[0] = &descClus[0];

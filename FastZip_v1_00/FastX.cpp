@@ -32,7 +32,10 @@ void FastX::tin_File(ifstream& ifs) {
 		seg[sn++].push_back(ts);
 	}
 	H = seg[1].size();
-	seg[0].resize(H);
+	just = (seg[0].size() == H);
+	if (!just) {
+		seg[0].resize(H);
+	}
 
 	for (U1 i = 0; i < Th; i++) {
 		clus[i]->tin_Cluster(seg[i]);
@@ -59,6 +62,9 @@ void FastX::tout_File(ofstream& ofs) {
 			ofs << endl << seg[j][i];
 		}
 	}
+	if (!just) {
+		ofs << endl;
+	}
 
 	Stamp(__func__, 1);
 }
@@ -69,6 +75,7 @@ void FastX::bin_File(ifstream& ifs) {
 	ifs.read((char*) &Th, sizeof (Th));
 	ifs.read((char*) &W, sizeof (W));
 	ifs.read((char*) &H, sizeof (H));
+	ifs.read((char*) &just, sizeof (just));
 	for (U1 i = 0; i < Th; i++) {
 		clus[i]->bin_Cluster(ifs);
 	}
@@ -82,6 +89,7 @@ void FastX::bout_File(ofstream& ofs) {
 	ofs.write((char*) &Th, sizeof (Th));
 	ofs.write((char*) &W, sizeof (W));
 	ofs.write((char*) &H, sizeof (H));
+	ofs.write((char*) &just, sizeof (just));
 	for (U1 i = 0; i < Th; i++) {
 		clus[i]->bout_Cluster(ofs);
 	}
