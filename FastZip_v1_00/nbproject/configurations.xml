@@ -36,6 +36,7 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>ReadMe</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -74,6 +75,8 @@
       <item path="QualCluster.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="QualCluster.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ReadMe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="SeqCluster.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -131,6 +134,8 @@
       <item path="QualCluster.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="QualCluster.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ReadMe" ex="false" tool="3" flavor2="0">
       </item>
       <item path="SeqCluster.cpp" ex="false" tool="1" flavor2="0">
       </item>

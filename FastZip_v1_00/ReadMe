@@ -1,0 +1,4 @@
+命令格式：
+
+[压缩] FastZip -E input output
+[解压] FastZip -D input output
