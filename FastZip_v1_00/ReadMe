@@ -1,4 +1,40 @@
-命令格式：
+================================================================
 
-[压缩] FastZip -E input output
-[解压] FastZip -D input output
+FastZip is a compressor/decompressor just for FastQ/FastA files.
+
+================================================================
+
+1. Condition
+
+	1-1. Hardware
+		16GB RAM at least
+
+	1-2. Software
+		Linux OS
+		GCC 3.4.x above
+
+================================================================
+
+2. Installation
+
+	2-1. Download
+		https://github.com/CorgiWang/FastZip_v1
+
+	2-2. Generate Executable File
+		$ make
+		$ sudo cp ./fastzip /usr 
+
+	2-3. Set Environmental Variables
+		......		
+
+================================================================
+
+3. Usage
+
+	3-1. Compression
+		fastzip -E Input Output
+
+	3-2. Decompression
+		fastzip -D Input Output
+
+================================================================
